@@ -187,7 +187,7 @@ module.exports = {
     '.eslintignore': 'lint',
     'config/test.env.js': 'testEnv || unit || e2e',
     'build/webpack.test.conf.js': "testEnv",
-    'build/webpack.test.conf.js': "unit && runner === 'karma'",
+    // 'build/webpack.test.conf.js': "unit && runner === 'karma'",
     'test/unit/**/*': 'unit',
     'test/unit/index.js': "unit && runner === 'karma'",
     'test/unit/jest.conf.js': "unit && runner === 'jest'",
