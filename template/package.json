@@ -26,7 +26,10 @@
   },
   "dependencies": {
     "vue": "^2.5.2"{{#router}},
-    "vue-router": "^3.0.1"{{/router}}
+    "vue-router": "^3.0.1"{{/router}}{{#vuex}},
+    "vuex":"^2.2.1"{{/vuex}}{{#axios}},
+    "axios": "^0.18.0"{{/axios}}{{#elementUI}},
+    "element-ui": "^2.3.2"{{/elementUI}}
   },
   "devDependencies": {
     {{#lint}}
@@ -100,6 +103,10 @@
     "html-webpack-plugin": "^2.30.1",
     "webpack-bundle-analyzer": "^2.9.0",
     "node-notifier": "^5.1.2",
+    {{#sass}}
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
+    {{/sass}}
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",

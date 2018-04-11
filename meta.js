@@ -74,6 +74,26 @@ module.exports = {
       type: 'confirm',
       message: 'Install vue-router?',
     },
+    vuex: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install vuex?',
+    },
+    axios: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install axios?',
+    },
+    elementUI: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install element-ui?',
+    },
+    sass: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install sass?',
+    },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
@@ -170,6 +190,9 @@ module.exports = {
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
     'src/router/**/*': 'router',
+    "src/store/**/*": "vuex",
+    "src/api/**/*": "axios",
+    "src/components/common/*": "elementUI",
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
