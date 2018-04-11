@@ -94,6 +94,11 @@ module.exports = {
       type: 'confirm',
       message: 'Install sass?',
     },
+    testEnv: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'do you need test environment?',
+    },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
@@ -180,7 +185,8 @@ module.exports = {
   filters: {
     '.eslintrc.js': 'lint',
     '.eslintignore': 'lint',
-    'config/test.env.js': 'unit || e2e',
+    'config/test.env.js': 'testEnv || unit || e2e',
+    'build/webpack.test.conf.js': "testEnv",
     'build/webpack.test.conf.js': "unit && runner === 'karma'",
     'test/unit/**/*': 'unit',
     'test/unit/index.js': "unit && runner === 'karma'",
