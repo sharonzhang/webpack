@@ -1,31 +1,30 @@
 <template>
-	<div class="common-layout">
-		<el-header class="push-header">
-			<div class="logo-content">
-				<img src="../../assets/img/logo.svg" alt="logo">
-				<h2>测试任务平台</h2>
-			</div>
-			<div class="user-info">
-				<img src="../../assets/img/avatar.jpg" alt="">
-				<el-dropdown :hide-on-click="false">
-				  <span class="el-dropdown-link">
-				    {{userName}}<i class="el-icon-caret-bottom el-icon--right"></i>
-				  </span>
-				  <el-dropdown-menu slot="dropdown">
-				    <!-- <el-dropdown-item :route="{name: 'profile'}">个人信息</el-dropdown-item> -->
-				    <el-dropdown-item :route="{name: 'logout'}">退出登录</el-dropdown-item>
-					</el-dropdown-menu>
-				</el-dropdown>
-			</div>
-		</el-header>
-		<sidebar :sidebar="sidebarData"></sidebar>
-		<el-main class="push-main" :style="{'min-height':winHeight+'px'}">
-			<slot name="main-content"></slot>
-		</el-main>
-	</div>
+<div class="common-layout">
+    <el-header class="push-header">
+    <div class="logo-content">
+        <img src="../../assets/img/logo.svg" alt="logo">
+        <h2>测试任务平台</h2>
+    </div>
+    <div class="user-info">
+        <img src="../../assets/img/avatar.jpg" alt="">
+        <el-dropdown :hide-on-click="false">
+          <span class="el-dropdown-link">
+            {{userName}}<i class="el-icon-caret-bottom el-icon--right"></i>
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <!-- <el-dropdown-item :route="{name: 'profile'}">个人信息</el-dropdown-item> -->
+            <el-dropdown-item :route="{name: 'logout'}">退出登录</el-dropdown-item>
+        </el-dropdown-menu>
+        </el-dropdown>
+    </div>
+    </el-header>
+    <sidebar :sidebar="sidebarData"></sidebar>
+    <el-main class="push-main" :style="{'min-height':winHeight+'px'}">
+        <slot name="main-content"></slot>
+    </el-main>
+    </div>
 </template>
 <script>
-/* eslint-disable */
 import sidebar from './sidebar.vue'
 export default{
     props:['sidebarData'],
