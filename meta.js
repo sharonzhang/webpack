@@ -199,6 +199,7 @@ module.exports = {
     'src/router/**/*': 'router',
     "src/store/**/*": "vuex",
     "src/api/**/*": "axios",
+    "src/assets/css/_variables.scss":"sass",
     "src/components/common/*": "elementUI",
   },
   complete: function(data, { chalk }) {
