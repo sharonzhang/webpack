@@ -14,7 +14,7 @@
         "libraryName": "element-ui",
         "styleLibraryName": "theme-chalk"
       }
-  ]{{/elmentUI}}]{{#if_or unit e2e}},
+  ]{{/elementUI}}]{{#if_or unit e2e}},
   "env": {
     "test": {
       "presets": ["env", "stage-2"]{{#if_eq runner "karma"}},
