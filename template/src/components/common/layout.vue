@@ -48,6 +48,7 @@ export default{
 <style lang="scss" scoped>
 .common-layout{
     margin-left:200px;
+    margin-top: 60px;
 }
 .push-header{
     position:fixed;
