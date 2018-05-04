@@ -46,10 +46,10 @@ module.exports = {
   {{#testEnv}}
   test: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../dist/test/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../dist/test'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
 
@@ -77,10 +77,10 @@ module.exports = {
   {{/testEnv}}
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../dist/build/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../dist/build'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
 
