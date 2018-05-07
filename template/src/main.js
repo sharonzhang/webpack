@@ -11,9 +11,9 @@ import router from './router'
 import Store from './store'
 {{/vuex}}
 {{#elementUI}}
-import ElmentUI from 'element-ui'
+import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-Vue.use(ElmentUI)
+Vue.use(ElementUI, { size: 'mini' })
 {{/elementUI}}
 Vue.config.productionTip = false
 
